@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<style>
+
+	#calc-contain{
+		position: relative;
+		width: 300px;
+		border: 2px solid black;
+		border-radius: 4px;
+		right: 200px;
+		left: 200px;
+		top: 200px;
+		bottom: 200px;
+	}
+
+	input[type=button]{
+		background-color: grey;
+		width:20%;
+		font-size: 20px;
+		font-weight: bold;
+		margin: 2%;
+		border-radius: 4px;
+	}
+
+	input[type=text]{
+		position: relative;
+		margin: 10px;
+		width: 90%;
+		height: 20px;
+		border: 2px solid black;
+	}
+
+</style>
+
+<div id="calc-contain">
+	<form name="calculator">
+		<input type="text" name="answer">
+			<br/>
+
+		<input type="button" value="1" onclick="calculator.answer.value+= '1'">
+		<input type="button" value="2" onclick="calculator.answer.value+= '2'">
+		<input type="button" value="3" onclick="calculator.answer.value+= '3'">
+		<input type="button" value="+" onclick="calculator.answer.value+= '+'">
+			<br/>
+
+		<input type="button" value="4" onclick="calculator.answer.value+= '4'">
+		<input type="button" value="5" onclick="calculator.answer.value+= '5'">
+		<input type="button" value="6" onclick="calculator.answer.value+= '6'">
+		<input type="button" value="-" onclick="calculator.answer.value+= '-'">
+			<br/>
+
+		<input type="button" value="7" onclick="calculator.answer.value+= '7'">
+		<input type="button" value="8" onclick="calculator.answer.value+= '8'">
+		<input type="button" value="9" onclick="calculator.answer.value+= '9'">
+		<input type="button" value="x" onclick="calculator.answer.value+= '*'">
+			<br/>
+
+		<input type="button" value="c" onclick="calculator.answer.value= ''">
+		<input type="button" value="0" onclick="calculator.answer.value+= '0'">
+		<input type="button" value="=" onclick="calculator.answer.value= eval(calculator.answer.value)">
+		<input type="button" value="/" onclick="calculator.answer.value+= '/'">
+			<br/>
+</div>
+
+</form>
+
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>
